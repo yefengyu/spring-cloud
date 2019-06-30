@@ -1,36 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e32504bf-83fc-4537-9946-4f1485e556ca" name="Default Changelist" comment="spring cloud gateway 和 ribbon 实现的简单分布式demo">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/config/MainConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/HealthExamination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/MyRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1001/src/main/java/com/yefengyu/cloud/Provider1001Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1001/src/main/java/com/yefengyu/cloud/controller/HealthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1001/src/main/java/com/yefengyu/cloud/controller/HelloWorldController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1002/src/main/java/cloud/Provider1002Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1002/src/main/java/cloud/controller/HealthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1002/src/main/java/cloud/controller/HelloWorldController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1003/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1003/src/main/java/cloud/Provider1003Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1003/src/main/java/cloud/controller/HealthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1003/src/main/java/cloud/controller/HelloWorldController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provider1003/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud.iml" afterDir="false" />
+    <list default="true" id="e32504bf-83fc-4537-9946-4f1485e556ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/globalFilter/FluidControlGlobalGatewayFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/globalFilter/GlobalGatewayFilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/AuthGatewayFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/AuthGatewayFilterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/IPForbidGatewayFilterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/utitls/AuthUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,11 +31,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/HealthExamination.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/IPForbidGatewayFilterFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="198">
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#664#665#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/globalFilter/FluidControlGlobalGatewayFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" column="37" lean-forward="true" selection-end-line="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,8 +66,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/GatewayApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="342">
+              <caret line="19" column="14" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/AuthGatewayFilterFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="324">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -86,17 +99,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="504">
+              <caret line="28" column="21" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="28" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/provider1001/src/main/java/com/yefengyu/cloud/controller/HelloWorldController.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.33.Final/netty-transport-4.1.33.Final.jar!/io/netty/channel/nio/NioEventLoop.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="136">
+              <caret line="318" selection-start-line="318" selection-end-line="318" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/AuthGatewayFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,10 +127,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/provider1001/src/main/java/com/yefengyu/cloud/controller/HealthController.java">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/globalFilter/GlobalGatewayFilterConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="360">
+              <caret line="20" column="27" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,38 +139,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/provider1001/src/main/java/com/yefengyu/cloud/Provider1001Application.java">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/utitls/AuthUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="21" selection-start-line="9" selection-end-line="13" />
+            <state relative-caret-position="396">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/config/MainConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/MyRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2221#2222#0" expanded="true" />
-                <element signature="e#2284#2285#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -194,15 +192,25 @@
         <option value="$PROJECT_DIR$/provider1002/src/main/java/cloud/Provider1002Application.java" />
         <option value="$PROJECT_DIR$/provider1003/src/main/java/cloud/Provider1003Application.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/provider1001/src/main/java/com/yefengyu/cloud/controller/HealthController.java" />
         <option value="$PROJECT_DIR$/provider1002/src/main/java/cloud/controller/HealthController.java" />
         <option value="$PROJECT_DIR$/provider1003/src/main/java/cloud/controller/HealthController.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/config/MainConfig.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/HealthExamination.java" />
-        <option value="$PROJECT_DIR$/gateway/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/GatewayApplication.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/MyRule.java" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/globalFilter/GlobalGatewayFilterConifg.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/AuthLocalGatewayFilterFactory.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/AuthLocalGatewayFilter.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/utitls/AuthUtil.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/ApplicationListenerEnvironmentPrepared.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/GatewayApplication.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/HttpToHttpsGatewayFilterFactory.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/AuthGatewayFilter.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/globalFilter/FluidControlGlobalGatewayFilter.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/globalFilter/GlobalGatewayFilterConfig.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/IPForbidGatewayFilterFactory.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -310,7 +318,37 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="globalFilter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="loadbanlance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="localFilter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="utitls" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -324,6 +362,106 @@
               <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
               <item name="provider1001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1002" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1003" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1003" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1003" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1003" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="provider1003" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,6 +477,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.yefengyu.gateway" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cloud.controller" />
     </key>
@@ -429,9 +570,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Provider1003Application" />
         <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.Provider1002Application" />
+        <item itemvalue="Application.Provider1003Application" />
         <item itemvalue="Application.Provider1001Application" />
         <item itemvalue="Application.EurekaServer2001" />
       </list>
@@ -448,10 +589,26 @@
       <option name="presentableId" value="Default" />
       <updated>1561639059968</updated>
     </task>
+    <task id="LOCAL-00001" summary="spring cloud gateway 和 ribbon 实现的简单分布式demo">
+      <created>1561859751211</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561859751211</updated>
+    </task>
+    <task id="LOCAL-00002" summary="spring cloud gateway 和 ribbon 实现的简单分布式demo">
+      <created>1561859770389</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561859770389</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -460,7 +617,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34844193" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38101983" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -468,7 +625,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -556,16 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provider1002/src/main/java/cloud/Provider1002Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0.jar!/com/netflix/loadbalancer/RetryRule.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -584,16 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="18" column="6" selection-start-line="17" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider1003/src/main/java/cloud/Provider1003Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,10 +802,157 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/MyRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1602">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2221#2222#0" expanded="true" />
+            <element signature="e#2284#2285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/provider1001/src/main/java/com/yefengyu/cloud/Provider1001Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="21" selection-start-line="9" selection-end-line="13" />
+        <state relative-caret-position="198">
+          <caret line="14" selection-start-line="9" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/vladimir-bukhtoyarov/bucket4j-core/4.4.1/bucket4j-core-4.4.1.jar!/io/github/bucket4j/Refill.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="53" />
+          <folding>
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/time/Duration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1512">
+          <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider1003/src/main/java/cloud/Provider1003Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider1002/src/main/java/cloud/Provider1002Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/ApplicationListenerEnvironmentPrepared.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/config/MainConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-httpclient/2.3.0/ribbon-httpclient-2.3.0.jar!/com/netflix/loadbalancer/PingUrl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/HealthExamination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0.jar!/com/netflix/loadbalancer/IPing.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.33.Final/netty-transport-4.1.33.Final.jar!/io/netty/channel/nio/NioEventLoop.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="318" selection-start-line="318" selection-end-line="318" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/globalFilter/GlobalGatewayFilterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="27" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/utitls/AuthUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/AuthGatewayFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/AuthGatewayFilterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -677,18 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/GatewayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/HealthExamination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="342">
+          <caret line="19" column="14" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -697,36 +971,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="324">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/globalFilter/FluidControlGlobalGatewayFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/config/MainConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="450">
+          <caret line="25" column="37" lean-forward="true" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/loadbanlance/MyRule.java">
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/yefengyu/gateway/localFilter/IPForbidGatewayFilterFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="198">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
-            <element signature="e#2284#2285#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
           </folding>
         </state>
       </provider>

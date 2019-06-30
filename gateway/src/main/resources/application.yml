@@ -13,6 +13,8 @@ spring:
             - Path=/gateway/**
           filters:
             - StripPrefix=1
+            - Auth
+            - IPForbid=0:0:0:0:0:0:0:1
 my-load-balanced-service:
   ribbon:
     listOfServers: localhost:1001,localhost:1002,localhost:1003

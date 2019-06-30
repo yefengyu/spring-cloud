@@ -22,5 +22,10 @@
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
             <version>2.1.0.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.vladimir-bukhtoyarov</groupId>
+            <artifactId>bucket4j-core</artifactId>
+            <version>4.4.1</version>
+        </dependency>
     </dependencies>
 </project>
