@@ -11,9 +11,9 @@ import java.util.List;
 
 public class MyRule extends AbstractLoadBalancerRule
 {
-    private  int total;
+    private int total;
 
-    private  int index;
+    private int index;
 
     List<Server> upList = new ArrayList<>();
 
