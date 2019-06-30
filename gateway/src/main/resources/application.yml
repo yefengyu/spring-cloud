@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway_server
+  cloud:
+    gateway:
+      default-filters:
+      routes:
+        - id: my_route
+          uri: lb://my-load-balanced-service
+          predicates:
+            - Path=/gateway/**
+          filters:
+            - StripPrefix=1
+my-load-balanced-service:
+  ribbon:
+    listOfServers: localhost:1001,localhost:1002,localhost:1003
+    NFLoadBalancerRuleClassName: com.yefengyu.gateway.loadbanlance.MyRule
+    NFLoadBalancerPingClassName: com.yefengyu.gateway.loadbanlance.HealthExamination
