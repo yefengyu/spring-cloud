@@ -1,4 +1,4 @@
-package com.yefengyu.gateway.localFilter;
+package com.yefengyu.gateway.local;
 
 import com.yefengyu.gateway.utitls.AuthUtil;
 import org.springframework.cloud.gateway.filter.GatewayFilter;

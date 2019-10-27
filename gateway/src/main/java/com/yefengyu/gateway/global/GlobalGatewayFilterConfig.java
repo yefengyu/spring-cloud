@@ -1,4 +1,4 @@
-package com.yefengyu.gateway.globalFilter;
+package com.yefengyu.gateway.global;
 
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.context.annotation.Bean;

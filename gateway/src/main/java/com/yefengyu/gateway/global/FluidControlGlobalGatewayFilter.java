@@ -1,4 +1,4 @@
-package com.yefengyu.gateway.globalFilter;
+package com.yefengyu.gateway.global;
 
 import io.github.bucket4j.Bandwidth;
 import io.github.bucket4j.Bucket;

@@ -1,4 +1,4 @@
-package com.yefengyu.gateway.localFilter;
+package com.yefengyu.gateway.local;
 
 import org.springframework.cloud.gateway.filter.GatewayFilter;
 import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFactory;
